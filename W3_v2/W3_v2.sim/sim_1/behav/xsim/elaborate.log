@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ab327ef89dab4fc3acfba403037333f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_bcdtoseg_behav xil_defaultlib.tb_bcdtoseg -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ab327ef89dab4fc3acfba403037333f7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_bintobcd_behav xil_defaultlib.tb_bintobcd -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -15,7 +15,6 @@ Compiling package ieee.std_logic_unsigned
 Compiling package ieee.std_logic_textio
 Compiling package ieee.numeric_std
 Compiling package unisim.vcomponents
-Compiling architecture waarheidstabel of entity xil_defaultlib.bcdtoseg [bcdtoseg_default]
-Compiling architecture behavioral of entity xil_defaultlib.bcdtoseg_board [bcdtoseg_board_default]
-Compiling architecture behavioural of entity xil_defaultlib.tb_bcdtoseg
-Built simulation snapshot tb_bcdtoseg_behav
+Compiling architecture behavioural of entity xil_defaultlib.bintobcd [bintobcd_default]
+Compiling architecture behavioural of entity xil_defaultlib.tb_bintobcd
+Built simulation snapshot tb_bintobcd_behav

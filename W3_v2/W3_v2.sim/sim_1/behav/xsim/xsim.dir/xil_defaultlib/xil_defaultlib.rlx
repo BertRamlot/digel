@@ -3,5 +3,7 @@
 Nov 18 2020
 09:47:47
 C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd,1634213290,vhdl,,,,tb_bcdtoseg,,,,,,,,
+C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/new/tb_bintobcd.vhd,1634217614,vhdl,,,,tb_bintobcd,,,,,,,,
 C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg.vhd,1634213408,vhdl,C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg_board.vhd,,,bcdtoseg,,,,,,,,
 C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg_board.vhd,1634205058,vhdl,C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd,,,bcdtoseg_board,,,,,,,,
+C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bintobcd.vhd,1634218275,vhdl,C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/new/tb_bintobcd.vhd,,,bintobcd,,,,,,,,

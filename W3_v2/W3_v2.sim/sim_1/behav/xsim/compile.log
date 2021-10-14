@@ -1,6 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bcdtoseg'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg_board.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'bcdtoseg_board'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_bcdtoseg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bintobcd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bintobcd'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/new/tb_bintobcd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_bintobcd'
