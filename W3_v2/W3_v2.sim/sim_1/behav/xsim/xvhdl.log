@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_bcdtoseg'
+ERROR: [VRFC 10-4982] syntax error near 'if' [C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd:125]
+ERROR: [VRFC 10-3782] unit 'behavioural' ignored due to previous errors [C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd:12]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_bcdtoseg.vhd' ignored due to errors

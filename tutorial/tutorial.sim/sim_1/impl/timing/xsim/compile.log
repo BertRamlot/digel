@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/bertr/digel/tutorial/tutorial.sim/sim_1/impl/timing/xsim/tb_blinky_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blinky
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/tutorial/tutorial.srcs/sim_1/imports/Tutorial_VHDL_files/tb_blinky.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_blinky'

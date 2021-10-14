@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_blinky_time_impl/xsimk.exe -simmode gui -wdb tb_blinky_time_impl.wdb -simrunnum 0 -socket 59734
+Design successfully loaded
+Design Loading Memory Usage: 6896 KB (Peak: 6896 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 7728 KB (Peak: 7728 KB)
+Simulation CPU Usage: 62 ms
