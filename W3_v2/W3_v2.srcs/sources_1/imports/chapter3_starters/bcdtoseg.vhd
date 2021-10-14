@@ -29,7 +29,7 @@ begin
         when "0010" =>
             segments_out <= "1011011";
         when "0011" =>
-            segments_out <= "1110100";
+            segments_out <= "1111001";
         when "0100" =>
             segments_out <= "1110100";
         when "0101" =>

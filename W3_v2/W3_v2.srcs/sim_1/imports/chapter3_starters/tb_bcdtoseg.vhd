@@ -103,7 +103,7 @@ begin
                 when "0010" =>
                     seg_out_exp := "1011011";
                 when "0011" =>
-                    seg_out_exp := "1110100";
+                    seg_out_exp := "1111001";
                 when "0100" =>
                     seg_out_exp := "1110100";
                 when "0101" =>
@@ -121,7 +121,7 @@ begin
                 when others =>
                     seg_out_exp := "-------";
                 end case;
-                seg_out_exp := not(seg_out_exp)
+                seg_out_exp := not(seg_out_exp);
                 if seg_out_exp = seg_out then
                     write (s, string'("SEG output matched at ")); 
                     write (s, bcd_in); 
