@@ -1,40 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634213436">
-  <File Type="PA-TCL" Name="bcdtoseg_board.tcl"/>
-  <File Type="REPORTS-TCL" Name="bcdtoseg_board_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="bcdtoseg_board.msk"/>
-  <File Type="RDI-RDI" Name="bcdtoseg_board.vdi"/>
-  <File Type="BG-BIT" Name="bcdtoseg_board.bit"/>
-  <File Type="BG-DRC" Name="bcdtoseg_board.drc"/>
-  <File Type="BG-BGN" Name="bcdtoseg_board.bgn"/>
-  <File Type="BG-BIN" Name="bcdtoseg_board.bin"/>
-  <File Type="BITSTR-RBT" Name="bcdtoseg_board.rbt"/>
-  <File Type="BITSTR-NKY" Name="bcdtoseg_board.nky"/>
-  <File Type="BITSTR-BMM" Name="bcdtoseg_board_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="bcdtoseg_board.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="bcdtoseg_board.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634819913">
+  <File Type="BITSTR-BMM" Name="multi_segment_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="multi_segment_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="multi_segment_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="multi_segment_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="multi_segment.tcl"/>
+  <File Type="OPT-TIMING" Name="multi_segment_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="multi_segment_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="multi_segment_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="multi_segment_reports.tcl"/>
+  <File Type="OPT-DRC" Name="multi_segment_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="multi_segment.hwdef"/>
+  <File Type="PWROPT-DCP" Name="multi_segment_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="multi_segment_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="multi_segment_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="multi_segment_placed.dcp"/>
+  <File Type="PLACE-IO" Name="multi_segment_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="multi_segment_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="multi_segment_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="multi_segment_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="multi_segment_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="multi_segment_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="multi_segment_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="multi_segment_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="multi_segment_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="multi_segment.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="multi_segment_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="multi_segment_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="multi_segment_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="multi_segment.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="multi_segment_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="multi_segment_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="multi_segment_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="multi_segment_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="multi_segment_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="multi_segment_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="multi_segment_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="multi_segment.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="multi_segment_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="multi_segment_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="multi_segment_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="multi_segment_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="multi_segment_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="multi_segment_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="multi_segment_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="multi_segment_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="multi_segment_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="multi_segment_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="multi_segment_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="multi_segment_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="multi_segment_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="multi_segment_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="multi_segment_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="multi_segment_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="multi_segment_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="multi_segment_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="multi_segment_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="multi_segment_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="multi_segment_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="multi_segment.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="multi_segment_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="multi_segment.rbt"/>
+  <File Type="BITSTR-NKY" Name="multi_segment.nky"/>
+  <File Type="PDI-FILE" Name="multi_segment.pdi"/>
+  <File Type="RCFI_FILE" Name="multi_segment.rcfi"/>
+  <File Type="CFI_FILE" Name="multi_segment.cfi"/>
+  <File Type="RNPI_FILE" Name="multi_segment.rnpi"/>
+  <File Type="NPI_FILE" Name="multi_segment.npi"/>
+  <File Type="RBD_FILE" Name="multi_segment.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="bcdtoseg_board.ltx"/>
-  <File Type="RCFI_FILE" Name="bcdtoseg_board.rcfi"/>
+  <File Type="BITSTR-LTX" Name="multi_segment.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="multi_segment.sysdef"/>
+  <File Type="BG-BGN" Name="multi_segment.bgn"/>
+  <File Type="BG-DRC" Name="multi_segment.drc"/>
+  <File Type="RDI-RDI" Name="multi_segment.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-HWDEF" Name="bcdtoseg_board.hwdef"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="bcdtoseg_board_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DCP" Name="bcdtoseg_board_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="bcdtoseg_board_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="bcdtoseg_board_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="bcdtoseg_board_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="bcdtoseg_board_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="bcdtoseg_board_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="bcdtoseg_board_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="bcdtoseg_board_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="bcdtoseg_board_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bcdtoseg_board_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bcdtoseg_board_postroute_physopt_bb.dcp"/>
-  <File Type="PDI-FILE" Name="bcdtoseg_board.pdi"/>
-  <File Type="CFI_FILE" Name="bcdtoseg_board.cfi"/>
-  <File Type="RNPI_FILE" Name="bcdtoseg_board.rnpi"/>
-  <File Type="NPI_FILE" Name="bcdtoseg_board.npi"/>
-  <File Type="RBD_FILE" Name="bcdtoseg_board.rbd"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bcdtoseg.vhd">
@@ -45,8 +85,50 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bintobcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/bintobcd.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/display_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/multiple_display_driver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multiple_display_driver.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/multi_segment.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multi_segment.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder_board.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/display_encoder_board.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bcdtoseg_board.vhd">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/bcdtoseg_board.vhd"/>
         <Attr Name="ImportTime" Val="1634205058"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -55,7 +137,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="bcdtoseg_board"/>
+      <Option Name="TopModule" Val="multi_segment"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -63,8 +145,17 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/VHDL_W3/Basys3_Master.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/Basys3_Master.xdc"/>
         <Attr Name="ImportTime" Val="1634210037"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/chapter3_starters/multi_segment.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multi_segment.xdc"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
@@ -90,6 +181,5 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

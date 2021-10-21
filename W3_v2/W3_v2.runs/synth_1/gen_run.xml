@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634213436">
-  <File Type="PA-TCL" Name="bcdtoseg_board.tcl"/>
-  <File Type="REPORTS-TCL" Name="bcdtoseg_board_reports.tcl"/>
-  <File Type="RDS-RDS" Name="bcdtoseg_board.vds"/>
-  <File Type="RDS-DCP" Name="bcdtoseg_board.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1634819547">
+  <File Type="PA-TCL" Name="multi_segment.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="multi_segment_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="multi_segment_reports.tcl"/>
+  <File Type="RDS-RDS" Name="multi_segment.vds"/>
+  <File Type="RDS-UTIL" Name="multi_segment_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="multi_segment_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="multi_segment.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="multi_segment_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="multi_segment_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bcdtoseg.vhd">
@@ -14,8 +19,50 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bintobcd.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/bintobcd.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/display_encoder.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/multiple_display_driver.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multiple_display_driver.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/multi_segment.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multi_segment.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder_board.vhd">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/display_encoder_board.vhd"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bcdtoseg_board.vhd">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/bcdtoseg_board.vhd"/>
         <Attr Name="ImportTime" Val="1634205058"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -24,7 +71,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="bcdtoseg_board"/>
+      <Option Name="TopModule" Val="multi_segment"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -32,8 +79,17 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/imports/VHDL_W3/Basys3_Master.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/Basys3_Master.xdc"/>
         <Attr Name="ImportTime" Val="1634210037"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/chapter3_starters/multi_segment.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../git_ugent/VHDL_W3/chapter3_starters/multi_segment.xdc"/>
+        <Attr Name="ImportTime" Val="1634205058"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

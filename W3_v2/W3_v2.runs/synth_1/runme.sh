@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log bcdtoseg_board.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bcdtoseg_board.tcl
+EAStep vivado -log multi_segment.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_segment.tcl

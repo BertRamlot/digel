@@ -1,5 +1,0 @@
-Vivado Simulator 2020.2
-Time resolution is 1 ps
-Failure: simulation ended
-Time: 360 ns  Iteration: 0  Process: /tb_bintobcd/line__31  File: C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/new/tb_bintobcd.vhd
-$finish called at time : 360 ns : File "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/new/tb_bintobcd.vhd" Line 39
