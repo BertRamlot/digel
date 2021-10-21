@@ -45,7 +45,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="11"/>
+    <Option Name="WTXSimLaunchSim" Val="35"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -82,40 +82,53 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bintobcd.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/chapter4_starters/addsub_board.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bintobcd.vhd"/>
-          <Attr Name="ImportTime" Val="1634218275"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter4_starters/addsub_board.vhd"/>
+          <Attr Name="ImportTime" Val="1634820208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bcdtoseg.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bcdtoseg.vhd"/>
           <Attr Name="ImportTime" Val="1634213408"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/bintobcd.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/display_encoder.vhd"/>
-          <Attr Name="ImportTime" Val="1634819536"/>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/bintobcd.vhd"/>
+          <Attr Name="ImportTime" Val="1634218275"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/multiple_display_driver.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/multiple_display_driver.vhd"/>
           <Attr Name="ImportTime" Val="1634205058"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/chapter3_starters/display_encoder.vhd">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../W3_v2/W3_v2.srcs/sources_1/imports/chapter3_starters/display_encoder.vhd"/>
+          <Attr Name="ImportTime" Val="1634819536"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter4_starters/addsub_display.vhd">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter4_starters/addsub_display.vhd"/>
           <Attr Name="ImportTime" Val="1634820208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -133,17 +146,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter4_starters/mux.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter4_starters/mux.vhd"/>
-          <Attr Name="ImportTime" Val="1634820208"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/chapter4_starters/addsub_board.vhd">
-        <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter4_starters/addsub_board.vhd"/>
           <Attr Name="ImportTime" Val="1634820208"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -151,7 +155,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="addsub_display"/>
+        <Option Name="TopModule" Val="addsub_board"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -173,9 +177,15 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/new/tb_mux.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PSRCDIR/sim_1/new/tb_mux.vhd"/>
           <Attr Name="ImportTime" Val="1634821868"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_addsub.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -196,7 +206,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="addsub_display"/>
+        <Option Name="TopModule" Val="tb_mux"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>

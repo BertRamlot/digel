@@ -25,15 +25,15 @@ architecture behavioural of bintobcd is
 begin
 
     process(data_in)
-            variable temp_bcd2 : std_logic_vector(4 downto 0);
+            variable temp_bcd1 : std_logic_vector(4 downto 0);
     begin
         if unsigned(data_in) >= 10 then    
-            bcd1 <= "0001";
-            temp_bcd2 := std_logic_vector(unsigned(data_in) - 10);
-            bcd2 <= temp_bcd2(3 downto 0);
+            temp_bcd1 := std_logic_vector(unsigned(data_in) - 10);
+            bcd1 <= temp_bcd1(3 downto 0);
+            bcd2 <= "0001";
         else
-            bcd1 <= "0000";
-            bcd2 <= data_in(3 downto 0);
+            bcd1 <= data_in(3 downto 0);
+            bcd2 <= "0000";
         end if;
     end process;
 

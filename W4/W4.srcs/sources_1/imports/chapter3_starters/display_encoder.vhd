@@ -31,8 +31,8 @@ begin
 	B2B : entity work.bintobcd(behavioural)
 	port map(
         data_in => data_in,
-        bcd1    => digit2,
-        bcd2    => digit1
+        bcd1    => digit1,
+        bcd2    => digit2
         );
         
     B2S_DIGIT_1 : entity work.bcdtoseg(waarheidstabel)
@@ -55,10 +55,11 @@ begin
         data_in(3)    => sign_in,
         segments_out  => segments_out(6 downto 0)
         );
+    
+    segments_out(13 downto 7) <= "-------";
 
     process(data_in, sign_in)
     begin
-        segments_out(13 downto 7) <= "-------";
         
         if unsigned(data_in) > 18 then
             mask_out <= "0000";

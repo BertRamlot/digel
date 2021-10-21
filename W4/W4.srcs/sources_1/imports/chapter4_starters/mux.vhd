@@ -21,6 +21,15 @@ architecture behavioural of  mux is
 
 begin
 
+    process(data_in0, data_in1, select_data)
+    begin
+        if select_data = '0' then
+            data_out <= data_in0;
+        else
+            data_out <= data_in1;
+        end if;
+    end process;
+
 -- add code here
 
 end behavioural;
