@@ -1,0 +1,21 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Line number 0, test vector 00100000 - anode match segments match 
+Line number 1, test vector 01100000 - anode match segments match 
+Line number 2, test vector 10100000 - anode match segments output (XXXXXXX) does not match desired(-------) 
+Line number 3, test vector 11100000 - anode match segments match 
+Line number 4, test vector 00010010 - anode match segments match 
+Line number 5, test vector 01010010 - anode match segments match 
+Line number 6, test vector 10010010 - anode match segments output (XXXXXXX) does not match desired(-------) 
+Line number 7, test vector 11010010 - anode match segments match 
+Line number 8, test vector 00101001 - anode match segments match 
+Line number 9, test vector 01101001 - anode match segments match 
+Line number 10, test vector 10101001 - anode match segments output (XXXXXXX) does not match desired(-------) 
+Line number 11, test vector 11101001 - anode match segments match 
+Line number 12, test vector 00000101 - anode match segments match 
+Line number 13, test vector 01000101 - anode match segments match 
+Line number 14, test vector 10000101 - anode match segments output (XXXXXXX) does not match desired(-------) 
+Line number 15, test vector 11000101 - anode match segments match 
+Failure: simulation ended
+Time: 160 ns  Iteration: 0  Process: /tb_display_encoder/tb1  File: C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_display_encoder.vhd
+$finish called at time : 160 ns : File "C:/Users/bertr/digel/W3_v2/W3_v2.srcs/sim_1/imports/chapter3_starters/tb_display_encoder.vhd" Line 108
