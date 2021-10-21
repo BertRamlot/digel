@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Oct 21 15:53:45 2021
+# Process ID: 14788
+# Current directory: C:/Users/bertr/digel/W4/W4.runs/synth_1
+# Command line: vivado.exe -log addsub_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source addsub_display.tcl
+# Log file: C:/Users/bertr/digel/W4/W4.runs/synth_1/addsub_display.vds
+# Journal file: C:/Users/bertr/digel/W4/W4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source addsub_display.tcl -notrace

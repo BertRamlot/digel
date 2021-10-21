@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3182489410683920499  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto b1e857b1400b47848f817bcf1a79981c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot addsub_display_behav xil_defaultlib.addsub_display" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:47:47" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2020.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/addsub_display_behav/xsimk.exe\"   \"xsim.dir/addsub_display_behav/obj/xsim_0.win64.obj\" \"xsim.dir/addsub_display_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2020.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
