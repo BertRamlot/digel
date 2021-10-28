@@ -1,0 +1,32 @@
+# Test patterns for BAD VHDL code (bad_vhdl.vhd)
+# input format: noskip reset enable data_in0 data_in1 data_out
+# NOTE: test vector file for sequential module (using skips for demonstration)!
+# Reset high, enable = '0' 
+1 1 0 110 010 000
+# Reset high, enable = '1' 
+1 1 1 110 010 000
+1 1 1 110 010 000
+# Reset low, enable = '0' 
+1 0 0 110 010 000
+0 0 0 110 010 000
+1 0 0 110 010 000
+# Reset low, enable = '1' 
+1 0 1 110 010 000
+0 0 1 110 010 010
+1 0 1 110 010 010
+# Change input 1 
+1 0 1 100 010 010
+1 0 1 100 010 000
+# Change input 2
+1 0 1 100 111 000
+1 0 1 100 111 100
+# Enable low, then change inputs
+1 0 0 100 111 100
+1 0 0 111 111 100
+1 0 0 111 101 100
+# Enable high again
+1 0 1 111 101 100
+1 0 1 111 101 101
+# Reset
+1 1 1 111 101 000
+1 1 1 111 101 000

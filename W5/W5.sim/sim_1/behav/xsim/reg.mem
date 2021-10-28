@@ -1,0 +1,14 @@
+# Test vector file for reg.vhd (woordbreedte = 3)
+# input format: reset enable data_in data_out
+# NOTE: test vector file for sequential module (no skips)!
+# Reset high, enable = '0' 
+1 0 110 000
+0 1 101 000
+0 0 011 101
+0 1 010 101
+1 1 110 000
+1 0 111 000
+0 1 010 000
+0 0 001 010
+0 1 001 010
+0 1 001 001

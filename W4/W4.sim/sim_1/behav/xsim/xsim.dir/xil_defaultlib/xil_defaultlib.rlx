@@ -3,11 +3,12 @@
 Nov 18 2020
 09:47:47
 C:/Users/bertr/digel/W4/W4.srcs/sim_1/imports/new/tb_mux.vhd,1634836669,vhdl,,,,tb_mux,,,,,,,,
+C:/Users/bertr/digel/W4/W4.srcs/sim_1/new/tb_addsub.vhd,1634835165,vhdl,,,,tb_addsub,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/bcdtoseg.vhd,1634830310,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/display_encoder.vhd,,,bcdtoseg,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/bintobcd.vhd,1634830291,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/display_encoder.vhd,,,bintobcd,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/display_encoder.vhd,1634830266,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_display.vhd,,,display_encoder,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter3_starters/multiple_display_driver.vhd,1634205058,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_display.vhd,,,multiple_display_driver,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub.vhd,1634833251,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_board.vhd,,,addsub,,,,,,,,
-C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_board.vhd,1634823314,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sim_1/imports/new/tb_mux.vhd,,,addsub_board,,,,,,,,
+C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_board.vhd,1634823314,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sim_1/new/tb_addsub.vhd,,,addsub_board,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/addsub_display.vhd,1634820208,vhdl,,,,addsub_display,,,,,,,,
 C:/Users/bertr/digel/W4/W4.srcs/sources_1/imports/chapter4_starters/mux.vhd,1634836547,vhdl,C:/Users/bertr/digel/W4/W4.srcs/sim_1/imports/new/tb_mux.vhd,,,mux,,,,,,,,

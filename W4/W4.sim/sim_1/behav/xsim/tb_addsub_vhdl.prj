@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../W4.srcs/sources_1/imports/chapter4_starters/addsub.vhd" \
+"../../../../W4.srcs/sources_1/imports/chapter4_starters/addsub_board.vhd" \
+"../../../../W4.srcs/sim_1/new/tb_addsub.vhd" \
+
+# Do not sort compile order
+nosort

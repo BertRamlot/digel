@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/bertr/digel/W5/W5.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd,1635426981,vhdl,,,,tb_rom_example,,,,,,,,
+C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/bcd_counter.vhd,1635423349,vhdl,C:/Users/bertr/digel/W5/W5.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd,,,bcd_counter,,,,,,,,
+C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd,1635428773,vhdl,C:/Users/bertr/digel/W5/W5.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd,,,button_pressed,,,,,,,,
+C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/debounce_control.vhd,1635427709,vhdl,C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd,,,debounce_control,,,,,,,,
+C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/reg.vhd,1635424922,vhdl,C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd,,,reg,,,,,,,,
+C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/sticky_counter.vhd,1635428541,vhdl,C:/Users/bertr/digel/W5/W5.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd,,,sticky_counter,,,,,,,,

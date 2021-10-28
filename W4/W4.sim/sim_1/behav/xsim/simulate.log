@@ -1,0 +1,22 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Line number 0, test vector 10000 -  match 
+Line number 1, test vector 10110 -  match 
+Line number 2, test vector 11101 -  match 
+Line number 3, test vector 11011 -  match 
+Line number 4, test vector 11111 -  match 
+Line number 5, test vector 11100 -  match 
+Line number 6, test vector 10001 -  match 
+Line number 7, test vector 01111 -  match 
+Line number 8, test vector 00101 -  match 
+Line number 9, test vector 01010 -  match 
+Line number 10, test vector 00000 -  match 
+Line number 11, test vector 00111 -  match 
+Line number 12, test vector 01101 -  match 
+Line number 13, test vector 01011 -  match 
+Line number 14, test vector 01001 -  match 
+Line number 15, test vector 01000 -  match 
+Line number 16, test vector 00001 -  match 
+Failure: simulation ended
+Time: 170 ns  Iteration: 0  Process: /tb_addsub/tb1  File: C:/Users/bertr/digel/W4/W4.srcs/sim_1/new/tb_addsub.vhd
+$finish called at time : 170 ns : File "C:/Users/bertr/digel/W4/W4.srcs/sim_1/new/tb_addsub.vhd" Line 88

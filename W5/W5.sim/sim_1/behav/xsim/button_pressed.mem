@@ -1,0 +1,56 @@
+# Test patterns for button_pressed.vhd  (using 4 bit internal counter)
+# input format: noskip reset button_in button_out
+# NOTE: test vector file for sequential module (using skips)!
+# Reset high
+1 1 0 0
+1 0 0 0
+1 0 0 0
+1 0 1 0
+# FF_1 = 0
+1 0 1 0
+# FF_1 = 1, cnt_up = 1, stc = 0000
+1 0 1 0
+1 0 1 0
+1 0 1 0
+1 0 1 0
+0 0 1 0   
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+0 0 1 0
+1 0 1 0
+1 0 1 0
+# FF_1 = 1, cnt_up = 1, stc = 1111
+1 0 1 0
+1 0 1 0
+1 0 1 0
+1 0 1 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+1 0 0 0
+
+

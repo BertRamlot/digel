@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../W5.srcs/sources_1/imports/chapter5_starters/debounce_control.vhd" \
+"../../../../W5.srcs/sources_1/imports/chapter5_starters/sticky_counter.vhd" \
+"../../../../W5.srcs/sources_1/imports/chapter5_starters/reg.vhd" \
+"../../../../W5.srcs/sources_1/imports/chapter5_starters/button_pressed.vhd" \
+"../../../../W5.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd" \
+
+# Do not sort compile order
+nosort
