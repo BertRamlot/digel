@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Oct 28 15:50:24 2021
+| Date             : Thu Nov  4 12:59:47 2021
 | Host             : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
 | Command          : report_power -file button_test_board_power_routed.rpt -pb button_test_board_power_summary_routed.pb -rpx button_test_board_power_routed.rpx
 | Design           : button_test_board
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.071        |
+| Total On-Chip Power (W)  | 0.072        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.001        |
-| Device Static (W)        | 0.070        |
+| Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
 | Junction Temperature (C) | 25.4         |
@@ -58,10 +58,10 @@ Table of Contents
 |   CARRY4       |    <0.001 |        2 |      8150 |            0.02 |
 |   Register     |    <0.001 |       17 |     41600 |            0.04 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |       35 |       --- |             --- |
+| Signals        |    <0.001 |       36 |       --- |             --- |
 | I/O            |    <0.001 |       16 |       106 |           15.09 |
-| Static Power   |     0.070 |          |           |                 |
-| Total          |     0.071 |          |           |                 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.072 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |

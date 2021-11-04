@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Oct 28 15:50:07 2021
+| Date         : Thu Nov  4 12:59:21 2021
 | Host         : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file button_test_board_control_sets_placed.rpt
 | Design       : button_test_board
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |               5 |            1 |
+| No           | No                    | Yes                    |               5 |            2 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              12 |            5 |
+| Yes          | No                    | Yes                    |              12 |            4 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,8 +73,8 @@ Table of Contents
 +----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  |                 Enable Signal                 | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | BUTTON/CONTROLLER/E[0]                        | btnC_IBUF        |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG |                                               | btnC_IBUF        |                1 |              5 |         5.00 |
+|  clk_IBUF_BUFG | BUTTON/CONTROLLER/E[0]                        | btnC_IBUF        |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG |                                               | btnC_IBUF        |                2 |              5 |         2.50 |
 |  clk_IBUF_BUFG | BUTTON/STICKY_CNT/internal_counter[7]_i_1_n_0 | btnC_IBUF        |                3 |              8 |         2.67 |
 +----------------+-----------------------------------------------+------------------+------------------+----------------+--------------+
 

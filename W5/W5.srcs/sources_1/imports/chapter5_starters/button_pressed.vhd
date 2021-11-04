@@ -25,7 +25,7 @@ signal overflow : std_logic;
 signal underflow : std_logic;
 signal cnt_up : std_logic;
 signal cnt_dwn : std_logic;
-signal state : std_logic_vector(7 downto 0);
+signal state : std_logic_vector(3 downto 0);
 signal btn_in_buffer_0 : std_logic;
 signal btn_in_buffer_1 : std_logic;
 
@@ -46,7 +46,7 @@ begin
     ); 
     
     STICKY_CNT : entity work.sticky_counter(Behavioral)
-    generic map ( N => 8)
+    generic map ( N => 4)
     port map (
         clk => clk,
         reset => reset,
@@ -78,10 +78,10 @@ begin
     -- minmax
     process(state)
     begin
-        if state = "11111111" then
+        if state = "1111" then
             overflow <= '1';
             underflow <= '0';
-        elsif state = "00000000" then
+        elsif state = "0000" then
             overflow <= '0';
             underflow <= '1';
         else
