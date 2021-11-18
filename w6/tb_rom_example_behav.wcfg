@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_rom_example_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_rom_example" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="500001fs"></ZoomEndTime>
+      <Cursor1Time time="500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="206"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_rom_example/dut_in0" type="array">
+      <obj_property name="ElementShortName">dut_in0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_in0[4:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/dut_out" type="array">
+      <obj_property name="ElementShortName">dut_out[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_out[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/dut_out_desired" type="array">
+      <obj_property name="ElementShortName">dut_out_desired[5:0]</obj_property>
+      <obj_property name="ObjectShortName">dut_out_desired[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/sw" type="array">
+      <obj_property name="ElementShortName">sw[5:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/CONTROLLER/buttons_in" type="array">
+      <obj_property name="ElementShortName">buttons_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">buttons_in[4:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/CONTROLLER/control_signals" type="array">
+      <obj_property name="ElementShortName">control_signals[6:0]</obj_property>
+      <obj_property name="ObjectShortName">control_signals[6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/CONTROLLER/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/control_signals" type="array">
+      <obj_property name="ElementShortName">control_signals[6:0]</obj_property>
+      <obj_property name="ObjectShortName">control_signals[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/memfile" type="array">
+      <obj_property name="ElementShortName">memfile[1:13]</obj_property>
+      <obj_property name="ObjectShortName">memfile[1:13]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/tb_sequential" type="logic">
+      <obj_property name="ElementShortName">tb_sequential</obj_property>
+      <obj_property name="ObjectShortName">tb_sequential</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/tb_uses_skips" type="logic">
+      <obj_property name="ElementShortName">tb_uses_skips</obj_property>
+      <obj_property name="ObjectShortName">tb_uses_skips</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/periode" type="other">
+      <obj_property name="ElementShortName">periode</obj_property>
+      <obj_property name="ObjectShortName">periode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/REG1/internal_value" type="array">
+      <obj_property name="ElementShortName">internal_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">internal_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/BCD_COUNTER/cnt_up" type="logic">
+      <obj_property name="ElementShortName">cnt_up</obj_property>
+      <obj_property name="ObjectShortName">cnt_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/BCD_COUNTER/cnt_dwn" type="logic">
+      <obj_property name="ElementShortName">cnt_dwn</obj_property>
+      <obj_property name="ObjectShortName">cnt_dwn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/REG2/internal_value" type="array">
+      <obj_property name="ElementShortName">internal_value[3:0]</obj_property>
+      <obj_property name="ObjectShortName">internal_value[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/ADDSUB/operation" type="logic">
+      <obj_property name="ElementShortName">operation</obj_property>
+      <obj_property name="ObjectShortName">operation</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/ADDSUB/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[4:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/ADDSUB/sign_out" type="logic">
+      <obj_property name="ElementShortName">sign_out</obj_property>
+      <obj_property name="ObjectShortName">sign_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/REG3/internal_value" type="array">
+      <obj_property name="ElementShortName">internal_value[5:0]</obj_property>
+      <obj_property name="ObjectShortName">internal_value[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rom_example/DUT/DATAPATH/MUX/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[5:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[5:0]</obj_property>
+   </wvobject>
+</wave_config>

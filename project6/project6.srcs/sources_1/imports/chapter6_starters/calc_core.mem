@@ -1,0 +1,8 @@
+# Test patterns for calc_core_board.vhd  (verification of data path and controller)
+# input format: btnC sw led
+# btnC used as reset
+# sw contains controller button inputs (C,U,D,L,R) 
+# led contains data path outputs: data_out(4 downto 0) & sign_out
+# NOTE: test vector file for sequential module (NOT using skips)!
+# Reset high
+1 00000 000000
