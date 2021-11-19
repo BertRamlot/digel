@@ -1,0 +1,33 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error for UNEVALUATED test input: U, UUUUU (output=000000, desired output=UUUUUU)
+# Test patterns for calc_core_board.vhd  (verification of data path and controller)
+# input format: btnC sw led
+# btnC used as reset
+# sw contains controller button inputs (C,U,D,L,R) 
+# led contains data path outputs: data_out(4 downto 0) & sign_out
+# NOTE: test vector file for sequential module (NOT using skips)!
+# Reset high
+Test OK for test input: 1, 00000 (output=000000, desired output=000000)
+Test OK for test input: 1, 00000 (output=000000, desired output=000000)
+# Reset low
+Test OK for test input: 0, 00000 (output=000000, desired output=000000)
+# Move to stage 1 (first operand - set to 9 using Dx1)
+# 2 cycles delay for output: 1 from controller and one from BCD-counter
+Test OK for test input: 0, 10000 (output=000000, desired output=000000)
+Test OK for test input: 0, 00100 (output=000000, desired output=000000)
+# Move to stage 2 (2nd operand - set to 8 using Dx1)
+Test OK for test input: 0, 10000 (output=000000, desired output=000000)
+ERROR for test input: 0, 00100 (output=000000, desired output=010010)
+# Move to stage 3 (opcode - PLUS)
+Test OK for test input: 0, 10000 (output=010010, desired output=010010)
+ERROR for test input: 0, 00001 (output=010010, desired output=010000)
+# Move to stage 4: show result
+ERROR for test input: 0, 10000 (output=010010, desired output=010000)
+ERROR for test input: 0, 00000 (output=010010, desired output=100010)
+
+11 test patterns run, 5 error(s) detected
+
+Failure: This is not a failure: all tests completed
+Time: 260 ns  Iteration: 0  Process: /tb_rom_example/line__88  File: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd
+$finish called at time : 260 ns : File "C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd" Line 108

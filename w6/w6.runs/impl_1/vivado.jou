@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Nov 18 15:28:09 2021
-# Process ID: 42648
+# Start of session at: Fri Nov 19 16:19:37 2021
+# Process ID: 29396
 # Current directory: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1
-# Command line: vivado.exe -log calculator_board.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source calculator_board.tcl -notrace
-# Log file: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1/calculator_board.vdi
+# Command line: vivado.exe -log calc_core_board.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source calc_core_board.tcl -notrace
+# Log file: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1/calc_core_board.vdi
 # Journal file: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source calculator_board.tcl -notrace
+source calc_core_board.tcl -notrace

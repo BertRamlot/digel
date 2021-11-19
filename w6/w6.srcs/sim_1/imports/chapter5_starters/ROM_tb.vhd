@@ -64,6 +64,7 @@ architecture behavioural of tb_rom_example is
   -- Periode waarbinnen elke combinatorische berekening afgerond moet zijn
   -----------------------------------------------------------------------------
   constant periode: time := 10ns;
+  constant idelay : time := 5ns;
   
   
 begin
@@ -252,7 +253,7 @@ end process;
             -- dut_enable <= INP_EN;
             -- read(v_ILINE, v_SPACE);           -- read in the space character
             read(v_ILINE, INP_IN0);
-            dut_in0 <= INP_IN0;
+            dut_in0 <= INP_IN0 after idelay;
             read(v_ILINE, v_SPACE);           -- read in the space character
             -- read(v_ILINE, INP_IN1);
             -- dut_in1 <= INP_IN1;

@@ -1,0 +1,24 @@
+# Test patterns for calc_core_board.vhd  (verification of data path and controller)
+# input format: btnC sw led
+# btnC used as reset
+# sw contains controller button inputs (C,U,D,L,R) 
+# led contains data path outputs: data_out(4 downto 0) & sign_out
+# NOTE: test vector file for sequential module (NOT using skips)!
+# Reset high
+1 00000 000000
+1 00000 000000
+# Reset low
+0 00000 000000
+# Move to stage 1 (first operand - set to 9 using Dx1)
+# 2 cycles delay for output: 1 from controller and one from BCD-counter
+0 10000 000000
+0 00100 000000
+# Move to stage 2 (2nd operand - set to 8 using Dx1)
+0 10000 000000
+0 00100 010010
+# Move to stage 3 (opcode - PLUS)
+0 10000 010010
+0 00001 010000
+# Move to stage 4: show result
+0 10000 010000
+0 00000 100010

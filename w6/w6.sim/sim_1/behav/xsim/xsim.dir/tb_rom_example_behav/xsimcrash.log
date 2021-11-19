@@ -1,0 +1,16 @@
+Exception at PC 0x0000000000405EB0
+Attemped to read address 0x0000000000000000
+Printing stacktrace...
+
+[0]  [0x0000000000405EB0]
+[1]  [0x0000000000405EB0]
+[2] (xsi_trace_all+0x11934) [0x00007FFBA1F39664]
+[3] (xsi_trace_all+0x1094b) [0x00007FFBA1F3867B]
+[4] (xsi_trace_all+0xcd47) [0x00007FFBA1F34A77]
+[5] (xsi_trace_all+0xbd4d) [0x00007FFBA1F33A7D]
+[6] (xsi_trace_all+0xa8dc) [0x00007FFBA1F3260C]
+[7] (xsi_trace_all+0xa449) [0x00007FFBA1F32179]
+[8] (recalloc+0x5c) [0x00007FFCA4D46C0C]
+[9] (BaseThreadInitThunk+0x10) [0x00007FFCA63854E0]
+[10] (RtlUserThreadStart+0x2b) [0x00007FFCA766485B]
+Done
