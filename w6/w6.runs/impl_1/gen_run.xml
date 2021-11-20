@@ -16,9 +16,12 @@
   <File Type="BITSTR-BMM" Name="calc_core_board_bd.bmm"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="calc_core_board_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="calc_core_board.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="calc_core_board_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="calc_core_board.sysdef"/>
+  <File Type="ROUTE-DRC-RPX" Name="calc_core_board_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="calc_core_board.ltx"/>
+  <File Type="RCFI_FILE" Name="calc_core_board.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="calc_core_board_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="calc_core_board.hwdef"/>
@@ -48,11 +51,8 @@
   <File Type="PHYSOPT-DCP" Name="calc_core_board_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="calc_core_board_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="calc_core_board_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="calc_core_board_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="calc_core_board_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="calc_core_board_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="calc_core_board.pdi"/>
-  <File Type="RCFI_FILE" Name="calc_core_board.rcfi"/>
   <File Type="CFI_FILE" Name="calc_core_board.cfi"/>
   <File Type="RNPI_FILE" Name="calc_core_board.rnpi"/>
   <File Type="NPI_FILE" Name="calc_core_board.npi"/>

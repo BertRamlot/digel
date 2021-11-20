@@ -1,0 +1,63 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Error for UNEVALUATED test input: U, UUUUU (output=0UUUU0, desired output=UUUUUU)
+# Test patterns for calc_core_board.vhd  (verification of data path and controller)
+# input format: btnC sw led
+# btnC used as reset
+# sw contains controller button inputs (C,U,D,L,R) 
+# led contains data path outputs: data_out(4 downto 0) & sign_out
+# NOTE: test vector file for sequential module (NOT using skips)!
+# Reset high
+Test OK for test input: 1, 00000 (output=000000, desired output=000000)
+Test OK for test input: 0, 01000 (output=000000, desired output=000000)
+Test OK for test input: 0, 00100 (output=000000, desired output=000000)
+Test OK for test input: 0, 00010 (output=000000, desired output=000000)
+Test OK for test input: 0, 00001 (output=000000, desired output=000000)
+# press central button
+Test OK for test input: 0, 10000 (output=000000, desired output=000000)
+# first number = 1
+Test OK for test input: 0, 01000 (output=000000, desired output=000000)
+Test OK for test input: 0, 00001 (output=000000, desired output=000000)
+Test OK for test input: 0, 10000 (output=000010, desired output=000010)
+# second number = 2
+Test OK for test input: 0, 01000 (output=000010, desired output=000010)
+Test OK for test input: 0, 10000 (output=000010, desired output=000010)
+# operator = plus
+Test OK for test input: 0, 10000 (output=000100, desired output=000100)
+Test OK for test input: 0, 01000 (output=000100, desired output=000100)
+Test OK for test input: 0, 00001 (output=000100, desired output=000100)
+Test OK for test input: 0, 10000 (output=000100, desired output=000100)
+# multiplexer already selects 0 but no value from REG3 yet
+Test OK for test input: 0, 00000 (output=000000, desired output=000000)
+Test OK for test input: 0, 00000 (output=000110, desired output=000110)
+Test OK for test input: 0, 00000 (output=000110, desired output=000110)
+Test OK for test input: 0, 00000 (output=000110, desired output=000110)
+#start again, value will be 2 (second number from previous calculation)
+Test OK for test input: 0, 10000 (output=000110, desired output=000110)
+# first number = 8
+Test OK for test input: 0, 00100 (output=000100, desired output=000100)
+Test OK for test input: 0, 00100 (output=000100, desired output=000100)
+Test OK for test input: 0, 00100 (output=000010, desired output=000010)
+Test OK for test input: 0, 00100 (output=000000, desired output=000000)
+Test OK for test input: 0, 00100 (output=010010, desired output=010010)
+Test OK for test input: 0, 01000 (output=010000, desired output=010000)
+Test OK for test input: 0, 00001 (output=001110, desired output=001110)
+Test OK for test input: 0, 10000 (output=010000, desired output=010000)
+# second number = 9
+Test OK for test input: 0, 01000 (output=010000, desired output=010000)
+Test OK for test input: 0, 01000 (output=010000, desired output=010000)
+Test OK for test input: 0, 00100 (output=010010, desired output=010010)
+Test OK for test input: 0, 10000 (output=000000, desired output=000000)
+# operator = min
+Test OK for test input: 0, 01000 (output=010010, desired output=010010)
+Test OK for test input: 0, 00100 (output=010010, desired output=010010)
+Test OK for test input: 0, 00010 (output=010010, desired output=010010)
+Test OK for test input: 0, 00001 (output=010010, desired output=010010)
+Test OK for test input: 0, 00010 (output=010010, desired output=010010)
+Test OK for test input: 0, 10000 (output=010010, desired output=010010)
+# multiplexer already enabled so it will select the old value from reg3, here = '3'
+Test OK for test input: 0, 00010 (output=000110, desired output=000110)
+Test OK for test input: 0, 00001 (output=000011, desired output=000011)
+FATAL_ERROR: Vivado Simulator kernel has discovered an exceptional condition from which it cannot recover. Process will terminate. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+Time: 820 ns  Iteration: 0  Process: /tb_rom_example/line__193
+  File: C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sim_1/i
