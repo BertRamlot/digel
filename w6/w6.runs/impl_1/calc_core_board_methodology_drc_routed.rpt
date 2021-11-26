@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Nov 19 16:18:43 2021
+| Date         : Fri Nov 26 22:02:40 2021
 | Host         : DellvanZander running 64-bit major release  (build 9200)
 | Command      : report_methodology -file calc_core_board_methodology_drc_routed.rpt -pb calc_core_board_methodology_drc_routed.pb -rpx calc_core_board_methodology_drc_routed.rpx
 | Design       : calc_core_board

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Fri Nov 19 16:18:44 2021
+| Date             : Fri Nov 26 22:02:40 2021
 | Host             : DellvanZander running 64-bit major release  (build 9200)
 | Command          : report_power -file calc_core_board_power_routed.rpt -pb calc_core_board_power_summary_routed.pb -rpx calc_core_board_power_routed.rpx
 | Design           : calc_core_board
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.076        |
+| Total On-Chip Power (W)  | 0.077        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.005        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |       66 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       33 |     20800 |            0.16 |
+| Slice Logic    |    <0.001 |       62 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       29 |     20800 |            0.14 |
 |   Register     |    <0.001 |       22 |     41600 |            0.05 |
-|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
+|   F7/F8 Muxes  |    <0.001 |        2 |     32600 |           <0.01 |
 |   Others       |     0.000 |        1 |       --- |             --- |
-| Signals        |    <0.001 |       55 |       --- |             --- |
+| Signals        |    <0.001 |       49 |       --- |             --- |
 | I/O            |     0.004 |       13 |       106 |           12.26 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.076 |          |           |                 |
+| Total          |     0.077 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -140,7 +140,7 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| calc_core_board |     0.004 |
+| calc_core_board |     0.005 |
 +-----------------+-----------+
 
 
