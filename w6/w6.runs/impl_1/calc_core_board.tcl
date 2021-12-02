@@ -17,7 +17,11 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board.tcl
   variable script "C:/Users/bertr/digel/w6/w6.runs/impl_1/calc_core_board.tcl"
+=======
+  variable script "C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1/calc_core_board.tcl"
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board.tcl
   variable category "vivado_impl"
 }
 
@@ -135,7 +139,11 @@ OPTRACE "set parameters" START { }
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board.tcl
   add_files -quiet C:/Users/bertr/digel/w6/w6.runs/synth_1/calc_core_board.dcp
+=======
+  add_files -quiet {{C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/synth_1/calc_core_board.dcp}}
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board.tcl
 OPTRACE "read constraints: implementation" START { }
   read_xdc C:/Users/bertr/digel/w6/w6.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
 OPTRACE "read constraints: implementation" END { }

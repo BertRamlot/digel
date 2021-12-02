@@ -1,8 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+<<<<<<< HEAD:w6/w6.runs/synth_1/calc_core_board_utilization_synth.rpt
 | Date         : Fri Nov 19 12:02:11 2021
 | Host         : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
+=======
+| Date         : Fri Nov 26 22:01:10 2021
+| Host         : DellvanZander running 64-bit major release  (build 9200)
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/synth_1/calculator_board_utilization_synth.rpt
 | Command      : report_utilization -file calc_core_board_utilization_synth.rpt -pb calc_core_board_utilization_synth.pb
 | Design       : calc_core_board
 | Device       : 7a35tcpg236-1
@@ -30,8 +35,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
+<<<<<<< HEAD:w6/w6.runs/synth_1/calc_core_board_utilization_synth.rpt
 | Slice LUTs*             |   33 |     0 |     20800 |  0.16 |
 |   LUT as Logic          |   33 |     0 |     20800 |  0.16 |
+=======
+| Slice LUTs*             |   29 |     0 |     20800 |  0.14 |
+|   LUT as Logic          |   29 |     0 |     20800 |  0.14 |
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/synth_1/calculator_board_utilization_synth.rpt
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |   22 |     0 |     41600 |  0.05 |
 |   Register as Flip Flop |   22 |     0 |     41600 |  0.05 |
@@ -150,6 +160,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     |   22 |        Flop & Latch |
+<<<<<<< HEAD:w6/w6.runs/synth_1/calc_core_board_utilization_synth.rpt
 | LUT6     |   18 |                 LUT |
 | LUT5     |   10 |                 LUT |
 | LUT4     |    8 |                 LUT |
@@ -158,6 +169,16 @@ Table of Contents
 | LUT2     |    4 |                 LUT |
 | MUXF7    |    1 |               MuxFx |
 | LUT3     |    1 |                 LUT |
+=======
+| LUT6     |   15 |                 LUT |
+| LUT5     |   10 |                 LUT |
+| IBUF     |    7 |                  IO |
+| OBUF     |    6 |                  IO |
+| LUT4     |    5 |                 LUT |
+| LUT3     |    3 |                 LUT |
+| LUT2     |    3 |                 LUT |
+| MUXF7    |    2 |               MuxFx |
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/synth_1/calculator_board_utilization_synth.rpt
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+

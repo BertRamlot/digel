@@ -4,7 +4,11 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
+<<<<<<< HEAD:w6/w6.runs/synth_1/calc_core_board.tcl
   variable script "C:/Users/bertr/digel/w6/w6.runs/synth_1/calc_core_board.tcl"
+=======
+  variable script "C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/synth_1/calc_core_board.tcl"
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/synth_1/calculator_board.tcl
   variable category "vivado_synth"
 }
 
@@ -86,6 +90,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/calc_core.mem
 read_vhdl -library xil_defaultlib {
+<<<<<<< HEAD:w6/w6.runs/synth_1/calc_core_board.tcl
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter4_starters/addsub.vhd
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter5_starters/bcd_counter.vhd
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/calc_control.vhd
@@ -93,6 +98,15 @@ read_vhdl -library xil_defaultlib {
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter4_starters/mux.vhd
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/data_path.vhd
   C:/Users/bertr/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/calc_core_board.vhd
+=======
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter4_starters/addsub.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter5_starters/bcd_counter.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/calc_control.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter5_starters/reg.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter4_starters/mux.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/data_path.vhd}
+  {C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.srcs/sources_1/imports/chapter6_starters/calc_core_board.vhd}
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/synth_1/calculator_board.tcl
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

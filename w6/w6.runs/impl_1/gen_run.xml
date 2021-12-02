@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637319665">
+=======
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637960517">
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7
   <File Type="BITSTR-BMM" Name="calc_core_board_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="calc_core_board_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="calc_core_board_timing_summary_init.rpt"/>

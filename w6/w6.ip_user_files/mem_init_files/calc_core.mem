@@ -6,25 +6,31 @@
 # NOTE: test vector file for sequential module (NOT using skips)!
 # Reset high
 1 00000 000000
+0 01000 000000
+0 00100 000000
+0 00010 000000
+0 00001 000000
 # press central button
 0 10000 000000
 # first number = 1
 0 01000 000000
-0 10000 000000
+0 00001 000000
+0 10000 000010
 # second number = 2
 0 01000 000010
 0 10000 000010
-# plus operator
+# operator = plus
+0 10000 000100
+0 01000 000100
 0 00001 000100
 0 10000 000100
-# multiplexer already selects 0 but no value from REG3 yet
-0 00000 000000
+0 00000 000110
 0 00000 000110
 0 00000 000110
 0 00000 000110
 #start again, value will be 2 (second number from previous calculation)
 0 10000 000110
-# first number select 8
+# first number = 8
 0 00100 000100
 0 00100 000100
 0 00100 000010
@@ -33,18 +39,24 @@
 0 01000 010000
 0 00001 001110
 0 10000 010000
-# second number select 9
+# second number = 9
 0 01000 010000
-0 10000 010000
-# operator is min
+0 01000 010000
+0 00100 010010
+0 10000 000000
+# operator = min
 0 01000 010010
 0 00100 010010
 0 00010 010010
 0 00001 010010
 0 00010 010010
 0 10000 010010
+<<<<<<< HEAD
 # multiplexer already enabled so it will select the old value from reg3, e.g. '3'
 0 00010 000110
+=======
+0 00010 000011
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7
 0 00001 000011
 
 

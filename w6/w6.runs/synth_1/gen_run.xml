@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637319665">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1637960439">
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7
   <File Type="PA-TCL" Name="calc_core_board.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="calc_core_board_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="calc_core_board_reports.tcl"/>

@@ -186,13 +186,13 @@ begin
         when push_arg2 =>
             control_signals <= "0001001";
         when sub =>
-            control_signals <= "0000001";
+            control_signals <= "0000011";
         when add =>
-            control_signals <= "0000101";
+            control_signals <= "0000111";
         when push_op_add =>
-            control_signals <= "0000110";
+            control_signals <= "0000100";
         when push_op_sub =>
-            control_signals <= "0000010";
+            control_signals <= "0000000";
         end case;
     end process;
 

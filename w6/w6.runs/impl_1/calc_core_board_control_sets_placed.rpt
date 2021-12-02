@@ -1,8 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board_control_sets_placed.rpt
 | Date         : Fri Nov 19 12:02:59 2021
 | Host         : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
+=======
+| Date         : Fri Nov 26 22:02:24 2021
+| Host         : DellvanZander running 64-bit major release  (build 9200)
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board_control_sets_placed.rpt
 | Command      : report_control_sets -verbose -file calc_core_board_control_sets_placed.rpt
 | Design       : calc_core_board
 | Device       : xc7a35t
@@ -62,7 +67,11 @@ Table of Contents
 | No           | No                    | Yes                    |               4 |            2 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board_control_sets_placed.rpt
 | Yes          | No                    | Yes                    |              18 |            8 |
+=======
+| Yes          | No                    | Yes                    |              18 |            5 |
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board_control_sets_placed.rpt
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,6 +79,7 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board_control_sets_placed.rpt
 +----------------+--------------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  |    Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+--------------------+------------------+------------------+----------------+--------------+
@@ -79,5 +89,16 @@ Table of Contents
 |  clk_IBUF_BUFG | CONTROLLER/ctrl[1] | sw_IBUF[0]       |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG | CONTROLLER/ctrl[0] | sw_IBUF[0]       |                4 |              6 |         1.50 |
 +----------------+--------------------+------------------+------------------+----------------+--------------+
+=======
++----------------+------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                              | sw_IBUF[0]       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | CONTROLLER/state_reg[3]_0[0] | sw_IBUF[0]       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | CONTROLLER/state_reg[3]_1[0] | sw_IBUF[0]       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | CONTROLLER/state_reg[2]_0[0] | sw_IBUF[0]       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | CONTROLLER/E[0]              | sw_IBUF[0]       |                2 |              6 |         3.00 |
++----------------+------------------------------+------------------+------------------+----------------+--------------+
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board_control_sets_placed.rpt
 
 

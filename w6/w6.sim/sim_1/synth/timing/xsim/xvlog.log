@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.sim/sim_1/synth/timing/xsim/tb_rom_example_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bcd_counter
+INFO: [VRFC 10-311] analyzing module calc_control
+INFO: [VRFC 10-311] analyzing module calc_core_board
+INFO: [VRFC 10-311] analyzing module data_path
+INFO: [VRFC 10-311] analyzing module reg
+INFO: [VRFC 10-311] analyzing module reg_0
+INFO: [VRFC 10-311] analyzing module reg__parameterized0
+INFO: [VRFC 10-311] analyzing module glbl

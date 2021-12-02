@@ -1,8 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+<<<<<<< HEAD:w6/w6.runs/impl_1/calc_core_board_io_placed.rpt
 | Date                      : Fri Nov 19 12:02:59 2021
 | Host                      : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
+=======
+| Date                      : Fri Nov 26 22:02:24 2021
+| Host                      : DellvanZander running 64-bit major release  (build 9200)
+>>>>>>> ecae7d1a4ff4fca3063760d65812e209a657fce7:w6/w6.runs/impl_1/calculator_board_io_placed.rpt
 | Command                   : report_io -file calc_core_board_io_placed.rpt
 | Design                    : calc_core_board
 | Device                    : xc7a35t
