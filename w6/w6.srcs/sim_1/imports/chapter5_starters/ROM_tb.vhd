@@ -20,7 +20,7 @@ architecture behavioural of tb_rom_example is
   -- DEZE SECTIE AANPASSEN (PLAATS 1 VAN 11):
   -- PAS HIER INDIEN NODIG NAAM VAN MEM-BESTAND AAN
   -----------------------------------------------------------------------------
-  constant memfile    : string := "calc_core.mem";
+  constant memfile    : string := "calc_core_ideal_timing.mem";
 
   -----------------------------------------------------------------------------
   -- DEZE SECTIE AANPASSEN (PLAATS 2 VAN 11):

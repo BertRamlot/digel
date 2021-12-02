@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/synth_1'
+HD_PWD='C:/Users/bertr/digel/w6/w6.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log calculator_board.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calculator_board.tcl
+EAStep vivado -log calc_core_board.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source calc_core_board.tcl

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/zande/Documents/universiteit/digitale electronica/digel/w6/w6.runs/impl_1'
+HD_PWD='C:/Users/bertr/digel/w6/w6.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log calculator_board.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source calculator_board.tcl -notrace
+EAStep vivado -log calc_core_board.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source calc_core_board.tcl -notrace
 
 
