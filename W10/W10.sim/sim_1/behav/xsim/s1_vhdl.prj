@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../W10.srcs/sources_1/imports/Downloads/reg.vhd" \
+"../../../../W10.srcs/sources_1/imports/Downloads/mux.vhd" \
+"../../../../W10.srcs/sources_1/imports/chapter7_starters/lfsr.vhd" \
+"../../../../W10.srcs/sources_1/imports/chapter7_starters/s1.vhd" \
+
+# Do not sort compile order
+nosort

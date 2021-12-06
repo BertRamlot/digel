@@ -58,7 +58,7 @@ begin
     end process;
     
     -- toestandfunctie
-    process(enable,state)
+    process(enable, state)
     begin
         case state is
         when IDLE =>

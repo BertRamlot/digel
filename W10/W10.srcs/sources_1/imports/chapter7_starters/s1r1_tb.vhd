@@ -27,13 +27,14 @@ begin
 	-- sender clock
 	btnU    => clk1,
 	-- receiver clock (same as sender clock here, can change to clk2 for different clocks)
-    btnD    => clk1,
+    btnD    => clk2,
     -- reset
     btnC   => reset,
     -- enable sender
     btnL   => enable_s,
     -- dout sender
     an     => dout_s,
+
     -- enable receiver
     btnR   => enable_r,
     -- din receiver
@@ -41,13 +42,14 @@ begin
     -- outputs receiver (dout, dout_ready, ok)
     led    => leds
 	);
-	
+		
 	enable_s <= '1';
 	enable_r <= '1';
-	din_r(0) <= transport dout_s(0) after delay1;
-	din_r(1) <= transport dout_s(1) after delay1;
-	din_r(2) <= transport dout_s(2) after delay1;
-	din_r(3) <= transport dout_s(3) after delay1;
+	din_r(0) <= transport dout_s(0) after delay2;
+	din_r(1) <= transport dout_s(1) after delay2;
+	din_r(2) <= transport dout_s(2) after delay2;
+	--din_r(3) <= '1';
+	din_r(3) <= transport dout_s(3) after delay2;
 	dout <= leds(5 downto 2);
 	dout_ready <= leds(1);
 	ok <= leds(0);

@@ -34,9 +34,8 @@ architecture Behavioral of r1 is
     signal state, new_state : statecode;
 
     signal load_in : std_logic;
+    signal allow_load_in : std_logic;
     signal ready : std_logic;
-    signal allow_lfsr_enable : std_logic;
-    signal lfsr_enable : std_logic;
 
     signal lfsr_out : std_logic_vector(3 downto 0);
     signal reg_out : std_logic_vector(3 downto 0);
@@ -56,19 +55,31 @@ begin
         data_out => reg_out
     );
 
-    lfsr_enable <= enable and allow_lfsr_enable;
-
     LFSR : entity work.lfsr(Behavioral)
     port map (
       clk => clk,
       reset => reset, 
       load => load_in,
       data_in => "1111",
-      enable => lfsr_enable,
+      enable => enable,
       data_out => lfsr_out
     );
 
     dout_ready <= ready;
+
+    -- load_in
+    process(lfsr_out, allow_load_in)
+    begin
+        if (lfsr_out = "0000") then
+            if (allow_load_in = '1') then
+                load_in <= '1';
+            else
+                load_in <= '0';
+            end if;
+        else
+            load_in <= '0';
+        end if; 
+    end process;
 
     -- ok
     process(ready, lfsr_out, reg_out)
@@ -95,7 +106,7 @@ begin
     end process;
     
     -- toestandfunctie
-    process(enable, lfsr_out, reg_out, state)
+    process(enable, state)
     begin
         case state is
         when LOADING =>
@@ -124,17 +135,14 @@ begin
     begin
         case state is
         when IDLE =>
-            load_in <= '0';
             ready <= '0';
-            allow_lfsr_enable <= '1';
+            allow_load_in <= '1';
         when PUSH =>
-            load_in <= '0';
             ready <= '1';
-            allow_lfsr_enable <= '1';
+            allow_load_in <= '1';
         when LOADING =>
-            load_in <= '1';
             ready <= '0';
-            allow_lfsr_enable <= '0';
+            allow_load_in <= '0';
         end case;
     end process;
 

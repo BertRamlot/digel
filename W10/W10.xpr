@@ -45,7 +45,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="57"/>
+    <Option Name="WTXSimLaunchSim" Val="111"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -108,23 +108,16 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/s1.vhd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/s1.vhd"/>
           <Attr Name="ImportTime" Val="1638446485"/>
           <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/s1r1_board.vhd">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/s1r1_board.vhd"/>
-          <Attr Name="ImportTime" Val="1638446485"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/s1r1_tb.vhd">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/s1r1_tb.vhd"/>
           <Attr Name="ImportTime" Val="1638446485"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -132,7 +125,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/r2.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/r2.vhd"/>
           <Attr Name="ImportTime" Val="1638446485"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -141,7 +134,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/s2.vhd">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/s2.vhd"/>
           <Attr Name="ImportTime" Val="1638446485"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -150,7 +143,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="s1r1_tb"/>
+        <Option Name="TopModule" Val="r1"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -172,9 +165,17 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/imports/chapter5_starters/ROM_tb.vhd">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../w6/w6.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd"/>
           <Attr Name="ImportTime" Val="1637320148"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/chapter7_starters/s1r1_tb.vhd">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/chapter7_starters/s1r1_tb.vhd"/>
+          <Attr Name="ImportTime" Val="1638446485"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -197,7 +198,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="s1r1_tb"/>
+        <Option Name="TopModule" Val="tb_rom_example"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
