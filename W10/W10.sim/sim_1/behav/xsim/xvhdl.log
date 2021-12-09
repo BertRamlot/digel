@@ -1,2 +1,6 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W10/W10.srcs/sim_1/imports/chapter5_starters/ROM_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_rom_example'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W10/W10.srcs/sources_1/imports/chapter7_starters/r2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'r2'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W10/W10.srcs/sources_1/imports/chapter7_starters/s1r1_board.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 's1r1_board'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bertr/digel/W10/W10.srcs/sources_1/imports/chapter7_starters/s1r1_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 's1r1_tb'

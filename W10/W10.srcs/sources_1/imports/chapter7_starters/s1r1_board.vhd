@@ -14,12 +14,14 @@ entity s1r1_board is
 Port ( 
     btnU        : in STD_LOGIC;                     -- sender clock
     btnD        : in STD_LOGIC;                     -- receiver clock
-    btnC       : in STD_LOGIC;                      -- reset
-    btnL       : in STD_LOGIC;                      -- enable sender
-    an         : out STD_LOGIC_VECTOR(3 downto 0);  -- dout sender
-    btnR       : in STD_LOGIC;                      -- enable receiver
-    sw         : in STD_LOGIC_VECTOR(3 downto 0);   -- din receiver
-    led        : out STD_LOGIC_VECTOR(5 downto 0)   -- outputs receiver (dout, dout_ready, ok)
+    btnC        : in STD_LOGIC;                      -- reset
+    s_dreq      : in STD_LOGIC;
+    s_dav       : out STD_LOGIC;
+    r_dreq      : out STD_LOGIC;
+    r_dav       : in STD_LOGIC;
+    an          : out STD_LOGIC_VECTOR(3 downto 0);  -- dout sender
+    sw          : in STD_LOGIC_VECTOR(3 downto 0);   -- din receiver
+    led         : out STD_LOGIC_VECTOR(5 downto 0)   -- outputs receiver (dout, dout_ready, ok)
 );
 end s1r1_board;
 
@@ -31,23 +33,26 @@ architecture Behavioral of s1r1_board is
 
 begin
 
-  S1: entity work.s1(Behavioral)
+
+  S2: entity work.s2(Behavioral)
   port map (
-    clk    => btnU,
-    reset  => btnC,
-    enable => btnL,
-    dout => an
+    clk => btnU,
+    reset => btnC,
+    dout => an,
+    dreq  => s_dreq,
+    dav => s_dav
   );
   
-  R1: entity work.r1(Behavioral)
+  R2: entity work.r2(Behavioral)
   port map (
-    clk    => btnD,
-    reset  => btnC,
-    enable => btnR,
+    clk => btnD,
+    reset => btnC,
     din => sw,
     dout => led(5 downto 2),
     dout_ready => led(1),
-    ok  => led(0)
+    ok => led(0),
+    dreq => r_dreq,
+    dav => r_dav
   );
 
 end Behavioral;

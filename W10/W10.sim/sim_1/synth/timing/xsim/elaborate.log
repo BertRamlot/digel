@@ -1,0 +1,49 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto dc5fe2507d724aa9a9c2984d68fd6bdb --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot s1r1_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.s1r1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "s1r1_tb_time_synth.sdf", for root module "s1r1_tb/DUT".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "s1r1_tb_time_synth.sdf", for root module "s1r1_tb/DUT".
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDCE_default
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5(INIT=32'b010000000000000000...
+Compiling module xil_defaultlib.reg_2
+Compiling module xil_defaultlib.lfsr_0
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module xil_defaultlib.reg_1
+Compiling module xil_defaultlib.r1
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.r2
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.reg
+Compiling module xil_defaultlib.lfsr
+Compiling module simprims_ver.FDPE_default
+Compiling module xil_defaultlib.s1
+Compiling module xil_defaultlib.s2
+Compiling module simprims_ver.OBUFT
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.s1r1_board
+Compiling architecture behavioural of entity xil_defaultlib.reg [\reg(n=1)\]
+Compiling architecture behavioural of entity xil_defaultlib.s1r1_tb
+Built simulation snapshot s1r1_tb_time_synth

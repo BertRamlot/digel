@@ -30,13 +30,71 @@ architecture Behavioral of r2 is
 ---------------------------------------
 
 -- add code here if necessary
-
-
+    type statecode is (REQUEST, READ, WAIT_DAV);
+    signal state, new_state : statecode;
+    
+    signal r_enable : std_logic;
 
 begin
 
-
 -- add code here 
+    R1 : entity work.r1(Behavioral)
+    port map (
+        clk => clk,
+        reset => reset,
+        enable => r_enable,
+        din => din,
+        dout => dout,
+        dout_ready => dout_ready,
+        ok => ok
+    );
 
+
+    -- flipflop
+    process(reset, clk)
+    begin
+        if reset = '1' then
+            state <= REQUEST;
+        elsif rising_edge(clk) then
+            state <= new_state;
+        end if;
+    end process;
+    
+    -- toestandfunctie
+    process(dav, state)
+    begin
+        case state is
+        when REQUEST =>
+            if dav = '0' then
+                new_state <= REQUEST;
+            else
+                new_state <= READ;
+            end if;
+        when READ =>
+            new_state <= WAIT_DAV;
+        when WAIT_DAV =>
+            if dav = '0' then
+                new_state <= REQUEST;
+            else
+                new_state <= WAIT_DAV;
+            end if;
+        end case;
+    end process;
+    
+    -- uitgangsfunctie Moore
+    process(state)
+    begin
+        case state is
+        when REQUEST =>
+            r_enable <= '0';
+            dreq <= '1';
+        when READ =>
+            r_enable <= '1';
+            dreq <= '1';
+        when WAIT_DAV =>
+            r_enable <= '0';
+            dreq <= '0';
+        end case;
+    end process;
 
 end Behavioral;

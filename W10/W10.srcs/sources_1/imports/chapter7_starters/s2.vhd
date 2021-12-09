@@ -27,13 +27,89 @@ architecture Behavioral of s2 is
 ---------------------------------------
 
 -- add code here if necessary
+    type statecode is (WAIT_REQ, BEFORE_READY, READY, AFTER_READY);
+    signal state, new_state : statecode;
 
-
+    signal s_enable : STD_LOGIC;
+    signal hoge_impedantie : STD_LOGIC;
+    signal s_dout : STD_LOGIC_VECTOR(3 downto 0);
 begin
 
-
 -- add code here 
-
+    S1 : entity work.s1(Behavioral)
+    port map (
+        clk => clk,
+        reset => reset,
+        enable => s_enable,
+        dout => s_dout
+    );
+    
+    
+    -- flipflop
+    process(reset, clk)
+    begin
+        if reset = '1' then
+            state <= AFTER_READY;
+        elsif rising_edge(clk) then
+            state <= new_state;
+        end if;
+    end process;
+    
+    -- toestandfunctie
+    process(dreq, state)
+    begin
+        case state is
+        when WAIT_REQ =>
+            if dreq = '0' then
+                new_state <= WAIT_REQ;
+            else
+                new_state <= BEFORE_READY;
+            end if;
+        when BEFORE_READY =>
+            new_state <= READY;
+        when READY =>
+            if dreq = '0' then
+                new_state <= AFTER_READY;
+            else
+                new_state <= READY;
+            end if;
+        when AFTER_READY =>
+            new_state <= WAIT_REQ;
+        end case;
+    end process;
+    
+    
+    process(hoge_impedantie, s_dout)
+    begin
+        if hoge_impedantie = '1' then
+            dout <= "ZZZZ";
+        else
+            dout <= s_dout;
+        end if;
+    end process;
+    
+    -- uitgangsfunctie Moore
+    process(state)
+    begin
+        case state is
+        when WAIT_REQ =>
+            s_enable <= '0';
+            dav <= '0';
+            hoge_impedantie <= '1';
+        when BEFORE_READY =>
+            s_enable <= '0';
+            dav <= '0';
+            hoge_impedantie <= '0';
+        when READY =>
+            s_enable <= '0';
+            dav <= '1';
+            hoge_impedantie <= '0';
+        when AFTER_READY =>  
+            s_enable <= '1';
+            dav <= '0';
+            hoge_impedantie <= '0';
+        end case;
+    end process;
 
   
 end Behavioral;

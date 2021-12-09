@@ -12,14 +12,20 @@ end s1r1_tb;
 architecture behavioural of s1r1_tb is
 	
 	signal clk1,clk2,reset,run: std_logic :='0';
-	signal enable_s, enable_r: std_logic;
 	signal dout_s, din_r, dout: std_logic_vector(3 downto 0);
 	signal leds: std_logic_vector(5 downto 0);
 	signal dout_ready, ok: std_logic;
-	constant periode1: time :=10 ns;
-	constant periode2: time := 11 ns;
-	constant delay1 : time := 1 ns;
-	constant delay2 : time := 10 ns;
+	signal s_dreq : STD_LOGIC;
+    signal s_dav_pre_channel : STD_LOGIC;
+    signal s_dav_post_channel : STD_LOGIC;
+    signal r_dreq_pre_channel : STD_LOGIC;
+    signal r_dreq_post_channel : STD_LOGIC;
+    signal r_dav : STD_LOGIC;
+	constant periode1: time := 10 ns; --sender
+	constant periode2: time := 12.4163 ns; --receiver
+	constant channel_delay_data : time := 1 ns;
+	constant channel_delay_dav : time := 1 ns;
+	constant channel_delay_dreq : time := 1 ns;
 begin		  
 	-- DUT staat voor 'device under test'
 	DUT : entity work.s1r1_board(Behavioral)
@@ -31,25 +37,49 @@ begin
     -- reset
     btnC   => reset,
     -- enable sender
-    btnL   => enable_s,
     -- dout sender
     an     => dout_s,
 
     -- enable receiver
-    btnR   => enable_r,
     -- din receiver
     sw     => din_r,
     -- outputs receiver (dout, dout_ready, ok)
-    led    => leds
+    led    => leds,
+    
+    s_dreq => s_dreq,
+    s_dav => s_dav_pre_channel,
+    r_dreq => r_dreq_pre_channel,
+    r_dav => r_dav
 	);
-		
-	enable_s <= '1';
-	enable_r <= '1';
-	din_r(0) <= transport dout_s(0) after delay2;
-	din_r(1) <= transport dout_s(1) after delay2;
-	din_r(2) <= transport dout_s(2) after delay2;
+	
+	REG_DAV : entity work.reg(behavioural)
+	generic map ( N => 1)
+	port map(
+	    reset  => reset,
+        clk  => clk2,
+        enable  => '1',
+        data_in(0)  => s_dav_post_channel,
+        data_out(0) => r_dav
+	);
+	
+	REG_DREQ : entity work.reg(behavioural)
+	generic map ( N => 1)
+	port map(
+        reset => reset,
+        clk => clk1,
+        enable  => '1',
+        data_in(0)  => r_dreq_post_channel,
+        data_out(0) => s_dreq
+	);
+	
+	s_dav_post_channel <= transport s_dav_pre_channel after channel_delay_dav;
+    r_dreq_post_channel <= transport r_dreq_pre_channel after channel_delay_dreq;
+
+	din_r(0) <= transport dout_s(0) after channel_delay_data;
+	din_r(1) <= transport dout_s(1) after channel_delay_data;
+	din_r(2) <= transport dout_s(2) after channel_delay_data;
+	din_r(3) <= transport dout_s(3) after channel_delay_data;
 	--din_r(3) <= '1';
-	din_r(3) <= transport dout_s(3) after delay2;
 	dout <= leds(5 downto 2);
 	dout_ready <= leds(1);
 	ok <= leds(0);
