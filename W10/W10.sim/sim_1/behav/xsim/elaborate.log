@@ -18,9 +18,9 @@ Compiling architecture behavioural of entity xil_defaultlib.mux [\mux(n=4)\]
 Compiling architecture behavioral of entity xil_defaultlib.lfsr [lfsr_default]
 Compiling architecture behavioral of entity xil_defaultlib.s1 [s1_default]
 Compiling architecture behavioral of entity xil_defaultlib.s2 [s2_default]
+Compiling architecture behavioural of entity xil_defaultlib.reg [\reg(n=1)\]
 Compiling architecture behavioral of entity xil_defaultlib.r1 [r1_default]
 Compiling architecture behavioral of entity xil_defaultlib.r2 [r2_default]
 Compiling architecture behavioral of entity xil_defaultlib.s1r1_board [s1r1_board_default]
-Compiling architecture behavioural of entity xil_defaultlib.reg [\reg(n=1)\]
 Compiling architecture behavioural of entity xil_defaultlib.s1r1_tb
 Built simulation snapshot s1r1_tb_behav

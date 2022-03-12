@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Dec  9 16:25:49 2021
-# Process ID: 2788
+# Start of session at: Fri Dec 17 14:04:13 2021
+# Process ID: 6032
 # Current directory: C:/Users/bertr/digel/W10/W10.runs/synth_1
 # Command line: vivado.exe -log s1r1_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source s1r1_board.tcl
 # Log file: C:/Users/bertr/digel/W10/W10.runs/synth_1/s1r1_board.vds

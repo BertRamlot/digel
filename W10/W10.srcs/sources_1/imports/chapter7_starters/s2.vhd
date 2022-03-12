@@ -27,12 +27,13 @@ architecture Behavioral of s2 is
 ---------------------------------------
 
 -- add code here if necessary
-    type statecode is (WAIT_REQ, BEFORE_READY, READY, AFTER_READY);
+    type statecode is (WAIT_REQ, ENABLE_READY, BEFORE_READY, READY, AFTER_READY);
     signal state, new_state : statecode;
 
     signal s_enable : STD_LOGIC;
     signal hoge_impedantie : STD_LOGIC;
     signal s_dout : STD_LOGIC_VECTOR(3 downto 0);
+   
 begin
 
 -- add code here 
@@ -49,7 +50,7 @@ begin
     process(reset, clk)
     begin
         if reset = '1' then
-            state <= AFTER_READY;
+            state <= ENABLE_READY;
         elsif rising_edge(clk) then
             state <= new_state;
         end if;
@@ -59,6 +60,8 @@ begin
     process(dreq, state)
     begin
         case state is
+        when ENABLE_READY =>
+            new_state <= WAIT_REQ;
         when WAIT_REQ =>
             if dreq = '0' then
                 new_state <= WAIT_REQ;
@@ -92,6 +95,10 @@ begin
     process(state)
     begin
         case state is
+        when ENABLE_READY => 
+            s_enable <= '1';
+            dav <= '0';
+            hoge_impedantie <= '1';
         when WAIT_REQ =>
             s_enable <= '0';
             dav <= '0';
@@ -110,6 +117,5 @@ begin
             hoge_impedantie <= '0';
         end case;
     end process;
-
   
 end Behavioral;

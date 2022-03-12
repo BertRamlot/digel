@@ -2,10 +2,8 @@
 # input format: reset enable din dout dout_ready ok
 # NOTE: test vector file for sequential module (NOT using skips)!
 # Reset high
-1 0 0000 0000 0 0
-1 0 0000 0000 0 0
-0 0 0000 0000 0 0
-0 0 0000 0000 0 0
+1 1 0000 0000 0 0
+1 1 0000 0000 0 0
 0 1 0000 0000 0 0
 0 0 1111 0000 0 0
 0 0 1111 0000 0 0

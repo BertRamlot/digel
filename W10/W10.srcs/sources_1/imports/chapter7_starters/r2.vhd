@@ -54,7 +54,7 @@ begin
     process(reset, clk)
     begin
         if reset = '1' then
-            state <= REQUEST;
+            state <= WAIT_DAV;
         elsif rising_edge(clk) then
             state <= new_state;
         end if;

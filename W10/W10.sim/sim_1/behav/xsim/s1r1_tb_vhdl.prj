@@ -5,6 +5,7 @@ vhdl xil_defaultlib  \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/lfsr.vhd" \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/r1.vhd" \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/r2.vhd" \
+"../../../../W10.srcs/sources_1/imports/chapter7_starters/s1.vhd" \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/s2.vhd" \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/s1r1_board.vhd" \
 "../../../../W10.srcs/sources_1/imports/chapter7_starters/s1r1_tb.vhd" \

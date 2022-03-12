@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Dec  9 16:26:27 2021
+| Date         : Fri Dec 17 14:04:48 2021
 | Host         : LAPTOP-FM4V0FMP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file s1r1_board_utilization_synth.rpt -pb s1r1_board_utilization_synth.pb
 | Design       : s1r1_board
@@ -54,8 +54,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 2     |          Yes |           - |          Set |
-| 19    |          Yes |           - |        Reset |
+| 1     |          Yes |           - |          Set |
+| 20    |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 0     |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -149,18 +149,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |   19 |        Flop & Latch |
+| FDCE     |   20 |        Flop & Latch |
 | IBUF     |    9 |                  IO |
 | OBUF     |    8 |                  IO |
 | LUT2     |    8 |                 LUT |
-| LUT6     |    5 |                 LUT |
-| LUT3     |    5 |                 LUT |
+| LUT4     |    7 |                 LUT |
+| LUT3     |    7 |                 LUT |
 | OBUFT    |    4 |                  IO |
-| LUT4     |    2 |                 LUT |
-| FDPE     |    2 |        Flop & Latch |
 | BUFG     |    2 |               Clock |
+| LUT6     |    1 |                 LUT |
 | LUT5     |    1 |                 LUT |
 | LUT1     |    1 |                 LUT |
+| FDPE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 
 

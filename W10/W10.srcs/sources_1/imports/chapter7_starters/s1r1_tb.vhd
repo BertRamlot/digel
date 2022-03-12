@@ -21,7 +21,7 @@ architecture behavioural of s1r1_tb is
     signal r_dreq_pre_channel : STD_LOGIC;
     signal r_dreq_post_channel : STD_LOGIC;
     signal r_dav : STD_LOGIC;
-	constant periode1: time := 10 ns; --sender
+	constant periode1: time := 10  ns; --sender
 	constant periode2: time := 12.4163 ns; --receiver
 	constant channel_delay_data : time := 1 ns;
 	constant channel_delay_dav : time := 1 ns;
@@ -30,26 +30,26 @@ begin
 	-- DUT staat voor 'device under test'
 	DUT : entity work.s1r1_board(Behavioral)
 	port map(
-	-- sender clock
-	btnU    => clk1,
-	-- receiver clock (same as sender clock here, can change to clk2 for different clocks)
-    btnD    => clk2,
-    -- reset
-    btnC   => reset,
-    -- enable sender
-    -- dout sender
-    an     => dout_s,
-
-    -- enable receiver
-    -- din receiver
-    sw     => din_r,
-    -- outputs receiver (dout, dout_ready, ok)
-    led    => leds,
+        -- sender clock
+        btnU    => clk1,
+        -- receiver clock (same as sender clock here, can change to clk2 for different clocks)
+        btnD    => clk2,
+        -- reset
+        btnC   => reset,
+        -- enable sender
+        -- dout sender
+        an     => dout_s,
     
-    s_dreq => s_dreq,
-    s_dav => s_dav_pre_channel,
-    r_dreq => r_dreq_pre_channel,
-    r_dav => r_dav
+        -- enable receiver
+        -- din receiver
+        sw     => din_r,
+        -- outputs receiver (dout, dout_ready, ok)
+        led    => leds,
+        
+        s_dreq => s_dreq,
+        s_dav => s_dav_pre_channel,
+        r_dreq => r_dreq_pre_channel,
+        r_dav => r_dav
 	);
 	
 	REG_DAV : entity work.reg(behavioural)
@@ -79,7 +79,8 @@ begin
 	din_r(1) <= transport dout_s(1) after channel_delay_data;
 	din_r(2) <= transport dout_s(2) after channel_delay_data;
 	din_r(3) <= transport dout_s(3) after channel_delay_data;
-	--din_r(3) <= '1';
+	-- din_r(3) <= '1';
+	
 	dout <= leds(5 downto 2);
 	dout_ready <= leds(1);
 	ok <= leds(0);
